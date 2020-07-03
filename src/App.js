@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './assets/styles/app.scss';
+import configureStore from './store/configureStore';
+import ErrorBoundary from './utils/ErrorBoundary';
+import {sampleRoute} from "./features/sample/sampleRoutes"
+// import Page404 from './shared_elements/Page404'
 
+const store = configureStore();
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Provider store={store}>
+        <Router>
+          <ErrorBoundary>
+            <Switch>
+            { sampleRoute.map(({path, component, key}, index) =>
+                  <Route exact path={path} component={component} key={key} />
+                )}
+            </Switch>
+          </ErrorBoundary>
+        </Router>
+      </Provider>
     </div>
   );
 }
-
 export default App;

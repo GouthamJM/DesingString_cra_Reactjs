@@ -1,0 +1,60 @@
+// $font_IBM: 'IBM Plex Sans', sans-serif;
+// $font_Noto: 'Noto Serif', serif;
+
+// $lightFont:300;
+// $regularFont:400;
+// $mediumFont:500;
+// $semiBoldFont:600;
+// $boldFont:700;
+
+// $color_black: #000000;
+// $color_white: #ffffff;
+// $color_background: #f8f8f8;
+// $color_tag: #5a5a5a;
+// $color_pink: #FF2640;
+// $color_error: #F5222D;
+
+// // $color_gray1: #D7D7D7;
+// // $color_gray2: #474747;
+// // $color_gray3: #D0D0D0;
+// // $color_p_gray: #BEBEBE;
+// // $color_black1: #2C2C2C;
+// // $color_black2: #212121;
+// // $color_pink_light: #DA8182;
+
+
+// $H1: 42px;
+// $H1sub: 20px;
+// $H2: 36px;
+// $H2sub : 18px;
+// $H3: 24px;
+// $p: 16px;
+// $font14: 14px;
+// $font12: 12px;
+// // $H4: 18px;
+
+// @mixin fontStyle($fontFamily: null, $size: null, $weight: null, $color: null,  $lineHeight: null){
+//   @if $fontFamily != null {
+//     font-family: $fontFamily;
+//   }
+//   @if $size != null {
+//     font-size: $size;
+//   }
+//   @if $weight != null {
+//     font-weight: $weight;
+//   }
+//   @if $color != null {
+//     color: $color;
+//   }
+//   @if $lineHeight != null {
+//     line-height: $lineHeight;
+//   }
+// }
+
+// @mixin transitionForAll($time: 0.3s,$transProp: ease){
+//   -webkit-transition: all $time $transProp;
+//   -moz-transition: all $time $transProp;
+//   -o-transition: all $time $transProp;
+//   transition: all $time $transProp;
+//   transition: all $time $transProp;
+// }
